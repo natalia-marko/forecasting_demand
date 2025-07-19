@@ -1,0 +1,83 @@
+# Data Science Project .gitignore
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data files (large datasets)
+*.csv
+*.parquet
+*.pickle
+*.pkl
+data/raw/
+data/processed/
+
+# But keep small example data
+!data/sample*.csv
+!data/example*.csv
+
+# Model files (can be large)
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.model
+
+# Output files
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+outputs/*.html
+
+# Keep output directories but ignore contents
+outputs/
+!outputs/.gitkeep
+
+# CatBoost info
+catboost_info/
+
+# MacOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# System files
+.Trash/
+
+# Don't track parent directories
+../
+../../
+../../../*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp 
